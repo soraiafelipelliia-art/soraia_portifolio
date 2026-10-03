@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soraia Felipelli | Líder de Transformação Ágil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#33164d; --bg2:#431f63; --line:#65408a; --pink:#e5528f; --orange:#ffb37c; --text:#fff; --muted:#dccbed;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.55 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.2;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:44px 0}
+h2{font-size:1.6rem;margin-bottom:6px}
+.sub{color:var(--muted);margin:0 0 24px;max-width:62ch}
+
+.hero{background:radial-gradient(60% 90% at 88% 40%,rgba(229,82,143,.42),transparent 70%),linear-gradient(120deg,#33164d 30%,#552058);position:relative;overflow:hidden;padding:56px 0 48px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center}
+.bar{border-left:3px solid var(--pink);padding-left:18px}
+.hero h1{font-size:clamp(1.9rem,4.6vw,2.9rem)}
+.role{color:var(--orange);font-weight:600;margin:14px 0 10px;font-size:1.1rem}
+.lead{color:var(--muted);max-width:56ch;margin:0 0 22px}
+.btn{display:inline-block;background:var(--orange);color:#3a1650;font-weight:600;padding:12px 22px;border-radius:999px;text-decoration:none}
+.btn:hover{background:#ffc79c}
+.btn:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.net{width:100%;height:auto;max-height:280px}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat b{display:block;font:700 2.1rem/1 Sora,sans-serif;color:var(--orange)}
+.stat span{display:block;margin-top:8px;color:var(--muted);font-size:.95rem}
+
+.cases{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.case{background:var(--bg2);border-left:4px solid var(--pink);border-radius:4px 14px 14px 4px;padding:18px 20px}
+.case h3{font-size:1.05rem;margin-bottom:4px}
+.case small{color:var(--orange);font-weight:600}
+.case p{margin:8px 0 0;color:var(--muted)}
+
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sk{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px}
+.sk h3{font-size:1rem;margin-bottom:12px;color:var(--orange)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips i{font-style:normal;font-size:.9rem;border:1px solid var(--line);background:rgba(255,255,255,.06);border-radius:999px;padding:4px 12px}
+
+.seg{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}
+.tabs{display:flex;flex-direction:column;gap:8px}
+.tabs button{font:600 1rem Sora,sans-serif;text-align:left;color:var(--text);background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--pink);border-color:var(--pink)}
+.panel{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:22px}
+.panel h3{font-size:1.2rem;margin-bottom:10px}
+.panel p{margin:0 0 14px;color:var(--muted)}
+
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 22px 18px}
+.tl li::before{content:"";position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--pink);border:3px solid var(--bg)}
+.tl b{font-family:Sora,sans-serif;color:var(--orange)}
+.tl span{display:block;color:var(--muted)}
+
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px}
+.edu div{background:rgba(255,255,255,.06);border-radius:10px;padding:10px 14px;font-size:.95rem}
+
+.cta{text-align:center;background:linear-gradient(120deg,#552058,#33164d);border-top:1px solid var(--line);padding:48px 0}
+.cta p{color:var(--muted);margin:10px auto 22px;max-width:52ch}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:18px}
+
+@media (max-width:820px){
+  .hero .wrap,.seg{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .cases,.skills,.edu{grid-template-columns:1fr}
+  .net{max-height:180px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bar">
+      <h1>Conecto tecnologia, pessoas e propósito para gerar resultado.</h1>
+      <p class="role">Soraia Felipelli · Líder de Transformação Ágil, projetos híbridos e ágeis</p>
+      <p class="lead">Entrego software e transformação em empresas de grande porte: do desenvolvimento de sistemas ao SAP, dos apps ao software embarcado. Hoje, aprofundando liderança, governança e escala em IA.</p>
+      <a class="btn" href="https://www.linkedin.com/in/soraia-felipelli-93402bb/" target="_blank" rel="noopener">Conversar no LinkedIn</a>
+    </div>
+    <svg class="net" viewBox="0 0 320 260" role="img" aria-label="Rede de conexões">
+      <g stroke="#e5528f" stroke-opacity=".6" stroke-width="1.5" fill="none">
+        <path d="M30 60 L110 110 L190 50 L280 90 L240 190 L130 210 L110 110 M190 50 L240 190 M30 60 L60 190 L130 210"/>
+      </g>
+      <g fill="#ffb37c"><circle cx="110" cy="110" r="9"/><circle cx="190" cy="50" r="7"/><circle cx="240" cy="190" r="8"/></g>
+      <g fill="#e5528f"><circle cx="30" cy="60" r="5"/><circle cx="280" cy="90" r="11"/><circle cx="130" cy="210" r="6"/><circle cx="60" cy="190" r="4"/></g>
+    </svg>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section>
+  <h2>Experiência em números</h2>
+  <p class="sub">Fatos do meu histórico profissional, sem enfeite.</p>
+  <div class="stats">
+    <div class="stat"><b>15+</b><span>empresas e clientes atendidos em vários setores</span></div>
+    <div class="stat"><b>23</b><span>sistemas legados integrados ao SAP com metodologia e portfólio definidos</span></div>
+    <div class="stat"><b>3</b><span>filiais da América Latina com SAP-MM implantado</span></div>
+    <div class="stat"><b>3</b><span>produtos de software embarcado sob minha gestão de entrega</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Resultados que entrego</h2>
+  <p class="sub">O que faço quando o projeto precisa de direção, ritmo e clareza.</p>
+  <div class="cases">
+    <article class="case"><small>EDAG do Brasil · 2025 até hoje</small><h3>Resgate e coordenação de entregas</h3><p>Diagnóstico de gargalos, planos de ação e remoção de impedimentos em 3 produtos embarcados, com riscos, roadmaps e dependências sob controle.</p></article>
+    <article class="case"><small>Bradesco Seguros · 2018–2019</small><h3>Portfólio e metodologia em escala</h3><p>Gestão de riscos e portfólio e definição da metodologia para 23 sistemas legados integrados ao SAP.</p></article>
+    <article class="case"><small>Honda</small><h3>Liderança de projetos estratégicos</h3><p>Times de projetos em várias filiais, foco em riscos e compliance, e implantação de SAP-MM em três filiais da América Latina.</p></article>
+    <article class="case"><small>A2 Evolution · 2020</small><h3>Produtos digitais do zero ao mercado</h3><p>Liderança de times em apps iOS/Android e websites, como Super Comics, Ganha-Mais e Home do Cidadão.</p></article>
+    <article class="case"><small>Mooven (Natura) · Hartb (Globo) · Thomson Reuters</small><h3>Cultura ágil em grandes organizações</h3><p>Apoio a squads, Agile Masters, RTEs e lideranças com Scrum, Kanban, Lean, OKR e SAFe (PI Planning).</p></article>
+    <article class="case"><small>Via, Crefitech, brMalls</small><h3>Produto e estratégia</h3><p>Gestão de backlog com PMs, formação de POs e PMs, e atuação em squads de fidelidade, e-commerce e operação de shoppings.</p></article>
+  </div>
+</section>
+
+<section>
+  <h2>Competências</h2>
+  <p class="sub">Da operação à estratégia, com certificações que sustentam a prática.</p>
+  <div class="skills">
+    <div class="sk"><h3>Agilidade e escala</h3><div class="chips"><i>SAFe 5 Agilist</i><i>Scrum</i><i>Kanban (TKP)</i><i>Lean Digital</i><i>OKR (POCC)</i><i>PI Planning</i><i>Agile Coach (PACC-P e PACC-A)</i></div></div>
+    <div class="sk"><h3>Liderança e pessoas</h3><div class="chips"><i>Coaching de times e líderes</i><i>Facilitação</i><i>Gestão de conflitos</i><i>Chief Happiness Officer</i><i>Alta performance (USP/Esalq)</i><i>Formação de agilistas</i></div></div>
+    <div class="sk"><h3>Gestão e governança</h3><div class="chips"><i>PMO</i><i>Gestão de riscos</i><i>Portfólio</i><i>Roadmap e backlog</i><i>Interdependências entre squads</i><i>Compliance</i></div></div>
+    <div class="sk"><h3>Produto</h3><div class="chips"><i>Product leadership (Tera)</i><i>Priorização</i><i>Parceria com negócio</i><i>Entrega contínua de valor</i></div></div>
+    <div class="sk"><h3>Tecnologia</h3><div class="chips"><i>Software embarcado</i><i>SAP-MM</i><i>Apps mobile e web</i><i>Sistemas legados</i><i>Base de desenvolvedora</i></div></div>
+    <div class="sk"><h3>Futuro e propósito</h3><div class="chips"><i>IA: governança e escala</i><i>ESG (USP/Esalq e INBS)</i><i>Inovação (MBA FIAP)</i><i>Gestão emocional</i></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Onde posso contribuir</h2>
+  <p class="sub">Escolha um segmento para ver minha experiência e como posso ajudar.</p>
+  <div class="seg">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Uma trajetória de evolução contínua</h2>
+  <p class="sub">Acompanhei cada ciclo da tecnologia e continuo estudando o próximo.</p>
+  <ul class="tl">
+    <li><b>Base técnica</b><span>Desenvolvedora de software na Goodyear, em sistemas financeiros e de RH</span></li>
+    <li><b>Grandes projetos</b><span>Honda: de projetos estratégicos a SAP-MM na América Latina</span></li>
+    <li><b>2017</b><span>Gerência de projetos, PMO e a virada para práticas ágeis</span></li>
+    <li><b>2019 a 2022</b><span>Scrum Master, líder de times e Agile Coach em consultorias e grandes marcas</span></li>
+    <li><b>2024</b><span>Agile Coach na Thomson Reuters e consultoria de produto na Crefitech</span></li>
+    <li><b>2025</b><span>Líder de Transformação Ágil na EDAG, com software embarcado</span></li>
+    <li><b>Out 2026</b><span>Início do MBA em IA Leadership: governança, estratégia e escala (FIAP)</span></li>
+  </ul>
+  <div class="edu">
+    <div>MBA em Inovação Empresarial · FIAP</div>
+    <div>Extensão em ESG · USP/Esalq</div>
+    <div>Processos Gerenciais · Anhembi Morumbi</div>
+    <div>Coautora do livro Mulheres na Tecnologia (2027)</div>
+  </div>
+</section>
+
+</main>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>Vamos conversar?</h2>
+    <p>Se o seu time precisa de entrega com previsibilidade, cultura ágil que funciona e liderança que une pessoas e tecnologia, me chame.</p>
+    <a class="btn" href="https://www.linkedin.com/in/soraia-felipelli-93402bb/" target="_blank" rel="noopener">Abrir meu perfil no LinkedIn</a>
+  </div>
+</div>
+<footer>Soraia Felipelli · São Paulo, Brasil</footer>
+
+<script>
+var D=[
+ {n:"Automotivo e embarcados",t:"Software embarcado e engenharia",p:"Gestão da entrega de 3 produtos embarcados na EDAG e projetos estratégicos na Honda.",c:["EDAG","Honda","Goodyear"],h:"Organizo entregas complexas, reduzo dependências e dou visibilidade de riscos entre engenharia e cliente."},
+ {n:"Financeiro, seguros e crédito",t:"Serviços financeiros",p:"Portfólio e metodologia para 23 sistemas no Bradesco Seguros, além de projetos em bancos e crédito.",c:["Bradesco Seguros","Crefitech (Crefisa)","Sofisa","Daycoval","Arbi"],h:"Trago governança, gestão de riscos e agilidade em ambientes regulados e com sistemas legados."},
+ {n:"Varejo e e-commerce",t:"Varejo, consumo e jornada do cliente",p:"Jornadas digitais, fidelidade e e-commerce em grandes operações de varejo e consumo.",c:["Via Hub Digital","Natura (Mooven)","brMalls"],h:"Conecto produto, tecnologia e negócio para priorizar o que gera valor ao cliente final."},
+ {n:"Mídia e informação",t:"Mídia, publicidade e conteúdo",p:"Squads de Advertising na Globo e transformação ágil na Thomson Reuters.",c:["Globo (Hartb)","Thomson Reuters"],h:"Levo cultura Lean-Agile e melhoria contínua a times e lideranças em operações de grande escala."},
+ {n:"Imobiliário",t:"Mercado imobiliário",p:"Requisitos e sistema de recebimento na Lello Imóveis, e squads de operação e e-shopping na brMalls.",c:["Lello Imóveis","brMalls"],h:"Transformo necessidades de negócio em requisitos claros e entregas incrementais."}
+];
+var tabs=document.getElementById("tabs"),panel=document.getElementById("panel");
+function show(i){
+  [].forEach.call(tabs.children,function(b,j){b.setAttribute("aria-selected",j===i)});
+  var d=D[i];
+  panel.innerHTML="<h3>"+d.t+"</h3><p>"+d.p+"</p><p><b>Como contribuo:</b> "+d.h+"</p><div class='chips'>"+d.c.map(function(x){return "<i>"+x+"</i>"}).join("")+"</div>";
+}
+D.forEach(function(d,i){
+  var b=document.createElement("button");b.type="button";b.setAttribute("role","tab");b.textContent=d.n;
+  b.onclick=function(){show(i)};tabs.appendChild(b);
+});
+show(0);
+</script>
+</body>
+</html>
