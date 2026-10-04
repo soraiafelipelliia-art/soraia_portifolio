@@ -71,10 +71,15 @@ h2{font-size:1.6rem;margin-bottom:6px}
 .cta p{color:var(--muted);margin:10px auto 22px;max-width:52ch}
 footer{text-align:center;color:var(--muted);font-size:.85rem;padding:18px}
 
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cert{background:var(--bg2);border:1px solid var(--line);border-top:3px solid var(--orange);border-radius:10px;padding:14px 16px}
+.cert b{display:block;font:700 1rem Sora,sans-serif}
+.cert span{display:block;margin-top:4px;color:var(--muted);font-size:.9rem}
+
 @media (max-width:820px){
   .hero .wrap,.seg{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
-  .cases,.skills,.edu{grid-template-columns:1fr}
+  .cases,.skills,.edu,.certs{grid-template-columns:1fr}
   .net{max-height:180px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -87,8 +92,8 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:18px}
     <div class="bar">
       <h1>Conecto tecnologia, pessoas e propósito para gerar resultado.</h1>
       <p class="role">Soraia Felipelli · Líder de Transformação Ágil, projetos híbridos e ágeis</p>
-      <p class="lead">Entrego software e transformação em empresas de grande porte: do desenvolvimento de sistemas ao SAP, dos apps ao software embarcado. Hoje, aprofundando liderança, governança e escala em IA.</p>
-      <a class="btn" href="https://www.linkedin.com/in/soraia-felipelli-93402bb/" target="_blank" rel="noopener">Conversar no LinkedIn</a>
+      <p class="lead">Ajudo grandes empresas a adotar métodos ágeis, escalar a agilidade e conduzir a transformação digital, unindo cultura, pessoas e estratégia. Hoje, aprofundo liderança, governança e escala em IA.</p>
+      <a class="btn" href="https://www.linkedin.com/in/soraia-f-sv-93402bb/" target="_blank" rel="noopener">Conversar no LinkedIn</a>
     </div>
     <svg class="net" viewBox="0 0 320 260" role="img" aria-label="Rede de conexões">
       <g stroke="#e5528f" stroke-opacity=".6" stroke-width="1.5" fill="none">
@@ -109,18 +114,18 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:18px}
     <div class="stat"><b>15+</b><span>empresas e clientes atendidos em vários setores</span></div>
     <div class="stat"><b>23</b><span>sistemas legados integrados ao SAP com metodologia e portfólio definidos</span></div>
     <div class="stat"><b>3</b><span>filiais da América Latina com SAP-MM implantado</span></div>
-    <div class="stat"><b>3</b><span>produtos de software embarcado sob minha gestão de entrega</span></div>
+    <div class="stat"><b>3</b><span>produtos em transformação ágil, com cultura e entrega coordenadas</span></div>
   </div>
 </section>
 
 <section>
-  <h2>Resultados que entrego</h2>
+  <h2>Resultados que gero</h2>
   <p class="sub">O que faço quando o projeto precisa de direção, ritmo e clareza.</p>
   <div class="cases">
-    <article class="case"><small>EDAG do Brasil · 2025 até hoje</small><h3>Resgate e coordenação de entregas</h3><p>Diagnóstico de gargalos, planos de ação e remoção de impedimentos em 3 produtos embarcados, com riscos, roadmaps e dependências sob controle.</p></article>
+    <article class="case"><small>EDAG do Brasil · 2025 até hoje</small><h3>Transformação ágil em escala</h3><p>Consolidação da cultura Lean-Agile em 3 produtos: diagnóstico de gargalos, planos de ação, riscos, roadmaps e dependências sob controle.</p></article>
     <article class="case"><small>Bradesco Seguros · 2018–2019</small><h3>Portfólio e metodologia em escala</h3><p>Gestão de riscos e portfólio e definição da metodologia para 23 sistemas legados integrados ao SAP.</p></article>
     <article class="case"><small>Honda</small><h3>Liderança de projetos estratégicos</h3><p>Times de projetos em várias filiais, foco em riscos e compliance, e implantação de SAP-MM em três filiais da América Latina.</p></article>
-    <article class="case"><small>A2 Evolution · 2020</small><h3>Produtos digitais do zero ao mercado</h3><p>Liderança de times em apps iOS/Android e websites, como Super Comics, Ganha-Mais e Home do Cidadão.</p></article>
+    <article class="case"><small>A2 Evolution · 2020</small><h3>Transformação digital e ágil de produtos</h3><p>Liderança de times ágeis na jornada digital de apps e sites, como Super Comics, Ganha-Mais e Home do Cidadão.</p></article>
     <article class="case"><small>Mooven (Natura) · Hartb (Globo) · Thomson Reuters</small><h3>Cultura ágil em grandes organizações</h3><p>Apoio a squads, Agile Masters, RTEs e lideranças com Scrum, Kanban, Lean, OKR e SAFe (PI Planning).</p></article>
     <article class="case"><small>Via, Crefitech, brMalls</small><h3>Produto e estratégia</h3><p>Gestão de backlog com PMs, formação de POs e PMs, e atuação em squads de fidelidade, e-commerce e operação de shoppings.</p></article>
   </div>
@@ -130,11 +135,11 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:18px}
   <h2>Competências</h2>
   <p class="sub">Da operação à estratégia, com certificações que sustentam a prática.</p>
   <div class="skills">
-    <div class="sk"><h3>Agilidade e escala</h3><div class="chips"><i>SAFe 5 Agilist</i><i>Scrum</i><i>Kanban (TKP)</i><i>Lean Digital</i><i>OKR (POCC)</i><i>PI Planning</i><i>Agile Coach (PACC-P e PACC-A)</i></div></div>
+    <div class="sk"><h3>Agilidade e escala</h3><div class="chips"><i>Agilidade em escala</i><i>SAFe 5 Agilist</i><i>Scrum</i><i>Kanban (TKP)</i><i>Lean Digital</i><i>OKR (POCC)</i><i>PI Planning</i><i>Agile Coach (PACC-P e PACC-A)</i></div></div>
     <div class="sk"><h3>Liderança e pessoas</h3><div class="chips"><i>Coaching de times e líderes</i><i>Facilitação</i><i>Gestão de conflitos</i><i>Chief Happiness Officer</i><i>Alta performance (USP/Esalq)</i><i>Formação de agilistas</i></div></div>
     <div class="sk"><h3>Gestão e governança</h3><div class="chips"><i>PMO</i><i>Gestão de riscos</i><i>Portfólio</i><i>Roadmap e backlog</i><i>Interdependências entre squads</i><i>Compliance</i></div></div>
     <div class="sk"><h3>Produto</h3><div class="chips"><i>Product leadership (Tera)</i><i>Priorização</i><i>Parceria com negócio</i><i>Entrega contínua de valor</i></div></div>
-    <div class="sk"><h3>Tecnologia</h3><div class="chips"><i>Software embarcado</i><i>SAP-MM</i><i>Apps mobile e web</i><i>Sistemas legados</i><i>Base de desenvolvedora</i></div></div>
+    <div class="sk"><h3>Transformação digital</h3><div class="chips"><i>Jornada digital</i><i>Mudança cultural</i><i>Contexto de engenharia</i><i>SAP e sistemas legados</i><i>Visão técnica de desenvolvedora</i></div></div>
     <div class="sk"><h3>Futuro e propósito</h3><div class="chips"><i>IA: governança e escala</i><i>ESG (USP/Esalq e INBS)</i><i>Inovação (MBA FIAP)</i><i>Gestão emocional</i></div></div>
   </div>
 </section>
@@ -156,8 +161,8 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:18px}
     <li><b>Grandes projetos</b><span>Honda: de projetos estratégicos a SAP-MM na América Latina</span></li>
     <li><b>2017</b><span>Gerência de projetos, PMO e a virada para práticas ágeis</span></li>
     <li><b>2019 a 2022</b><span>Scrum Master, líder de times e Agile Coach em consultorias e grandes marcas</span></li>
-    <li><b>2024</b><span>Agile Coach na Thomson Reuters e consultoria de produto na Crefitech</span></li>
-    <li><b>2025</b><span>Líder de Transformação Ágil na EDAG, com software embarcado</span></li>
+    <li><b>2024</b><span>Agile Coach na Thomson Reuters e Agilista na Crefitech</span></li>
+    <li><b>2025</b><span>Líder de Transformação Ágil na EDAG, com times de engenharia</span></li>
     <li><b>Out 2026</b><span>Início do MBA em IA Leadership: governança, estratégia e escala (FIAP)</span></li>
   </ul>
   <div class="edu">
@@ -168,20 +173,26 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:18px}
   </div>
 </section>
 
+<section>
+  <h2>Certificações</h2>
+  <p class="sub">12 certificações e treinamentos em agilidade, produto, liderança e sustentabilidade.</p>
+  <div class="certs"><div class="cert"><b>PACC-P</b><span>Professional Agile Coach Certified, Practitioner</span></div><div class="cert"><b>PACC-A</b><span>Professional Agile Coach Certified, Accredited</span></div><div class="cert"><b>SAFe 5 Agilist</b><span>Scaled Agile Framework</span></div><div class="cert"><b>POCC</b><span>Professional OKR Coach</span></div><div class="cert"><b>TKP</b><span>Team Kanban Practitioner · Kanban University</span></div><div class="cert"><b>SFPC</b><span>Scrum Foundation Professional Certificate</span></div><div class="cert"><b>PPFL</b><span>Especialista em Lean Digital · Lean Institute Brasil</span></div><div class="cert"><b>CHO</b><span>Chief Happiness Officer · Instituto Feliciência e Woohoo Partnership</span></div><div class="cert"><b>Digital Product Leadership</b><span>Produto · Tera</span></div><div class="cert"><b>Liderança e Gestão de Alta Performance</b><span>Extensão universitária · USP/Esalq</span></div><div class="cert"><b>ESG</b><span>Instituto Brasileiro de Sustentabilidade (INBS)</span></div><div class="cert"><b>Gestão Emocional e Arquétipos</b><span>Happiness Institute</span></div></div>
+</section>
+
 </main>
 
 <div class="cta">
   <div class="wrap">
     <h2>Vamos conversar?</h2>
-    <p>Se o seu time precisa de entrega com previsibilidade, cultura ágil que funciona e liderança que une pessoas e tecnologia, me chame.</p>
-    <a class="btn" href="https://www.linkedin.com/in/soraia-felipelli-93402bb/" target="_blank" rel="noopener">Abrir meu perfil no LinkedIn</a>
+    <p>Se a sua empresa quer evoluir seus métodos, escalar a agilidade e conduzir a transformação digital com pessoas no centro, me chame.</p>
+    <a class="btn" href="https://www.linkedin.com/in/soraia-f-sv-93402bb/" target="_blank" rel="noopener">Abrir meu perfil no LinkedIn</a>
   </div>
 </div>
 <footer>Soraia Felipelli · São Paulo, Brasil</footer>
 
 <script>
 var D=[
- {n:"Automotivo e embarcados",t:"Software embarcado e engenharia",p:"Gestão da entrega de 3 produtos embarcados na EDAG e projetos estratégicos na Honda.",c:["EDAG","Honda","Goodyear"],h:"Organizo entregas complexas, reduzo dependências e dou visibilidade de riscos entre engenharia e cliente."},
+ {n:"Automotivo e embarcados",t:"Engenharia e manufatura",p:"Transformação ágil em 3 produtos na EDAG e projetos estratégicos na Honda.",c:["EDAG","Honda","Goodyear"],h:"Escalo a agilidade em times de engenharia, reduzo dependências e dou visibilidade de riscos entre áreas e cliente."},
  {n:"Financeiro, seguros e crédito",t:"Serviços financeiros",p:"Portfólio e metodologia para 23 sistemas no Bradesco Seguros, além de projetos em bancos e crédito.",c:["Bradesco Seguros","Crefitech (Crefisa)","Sofisa","Daycoval","Arbi"],h:"Trago governança, gestão de riscos e agilidade em ambientes regulados e com sistemas legados."},
  {n:"Varejo e e-commerce",t:"Varejo, consumo e jornada do cliente",p:"Jornadas digitais, fidelidade e e-commerce em grandes operações de varejo e consumo.",c:["Via Hub Digital","Natura (Mooven)","brMalls"],h:"Conecto produto, tecnologia e negócio para priorizar o que gera valor ao cliente final."},
  {n:"Mídia e informação",t:"Mídia, publicidade e conteúdo",p:"Squads de Advertising na Globo e transformação ágil na Thomson Reuters.",c:["Globo (Hartb)","Thomson Reuters"],h:"Levo cultura Lean-Agile e melhoria contínua a times e lideranças em operações de grande escala."},
